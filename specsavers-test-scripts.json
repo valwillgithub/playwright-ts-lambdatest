@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test:specsavers:critical": "npx playwright test specsavers-critical-path.test.ts",
+    "test:specsavers:smoke": "npx playwright test specsavers-smoke.test.ts",
+    "test:specsavers:journeys": "npx playwright test specsavers-user-journeys.test.ts",
+    "test:specsavers:all": "npx playwright test specsavers",
+    "test:specsavers:critical:headed": "npx playwright test specsavers-critical-path.test.ts --headed",
+    "test:specsavers:mobile": "npx playwright test specsavers-critical-path.test.ts --grep 'Mobile responsiveness'",
+    "test:specsavers:booking": "npx playwright test specsavers --grep 'booking'",
+    "test:specsavers:chrome": "npx playwright test specsavers --project=chromium",
+    "test:specsavers:report": "npx playwright show-report"
+  }
+}
