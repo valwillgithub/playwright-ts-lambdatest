@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --project=chrome",
-    "test:lt": "npx playwright test --project=\"chrome:latest:MacOS Catalina@lambdatest\""
+    "test:lt": "npx playwright test --project=\"chrome:latest:MacOS Catalina@lambdatest\"",
+    "test:hr": "npx playwright test ./tests/hrUserChatGPT.test.ts",
+    "bcg2": "npx playwright test ./tests/BCG2.test.ts --ui",
+    "passfile": "npx playwright test --headed",
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "",

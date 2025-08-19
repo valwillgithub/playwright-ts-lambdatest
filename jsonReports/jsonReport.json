@@ -1,5 +1,7 @@
 {
   "config": {
+    "configFile": "C:\\Playwright\\playwright-ts-lambdatest\\playwright.config.ts",
+    "rootDir": "C:/Playwright/playwright-ts-lambdatest/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -8,58 +10,10 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
-    "projects": [
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome:latest:MacOS Catalina@lambdatest",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome:latest:Windows 10@lambdatest",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "chrome",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      },
-      {
-        "outputDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright/test-results",
-        "repeatEach": 1,
-        "retries": 0,
-        "name": "firefox",
-        "testDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
-        "testIgnore": [],
-        "testMatch": [
-          "pomtest/addToCartUsingFixture.test.ts"
-        ],
-        "timeout": 300000
-      }
-    ],
     "reporter": [
       [
         "dot",
@@ -80,154 +34,111 @@
     ],
     "reportSlowTests": {
       "max": 5,
-      "threshold": 15000
+      "threshold": 300000
     },
-    "rootDir": "C:/Users/kouss/OneDrive/Desktop/learn-playwright",
     "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Playwright/playwright-ts-lambdatest/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "C:/Playwright/playwright-ts-lambdatest/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.22.2",
-    "workers": 4,
-    "webServer": null,
-    "_globalOutputDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
-    "_configDir": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright",
-    "_testGroupsCount": 1
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 2,
+    "webServer": null
   },
   "suites": [
     {
-      "title": "pomtest\\addToCartUsingFixture.test.ts",
-      "file": "pomtest/addToCartUsingFixture.test.ts",
-      "line": 0,
+      "title": "BCG2.test.ts",
+      "file": "BCG2.test.ts",
       "column": 0,
-      "specs": [],
-      "suites": [
+      "line": 0,
+      "specs": [
         {
-          "title": "Page object test demo",
-          "file": "pomtest/addToCartUsingFixture.test.ts",
-          "line": 8,
-          "column": 6,
-          "specs": [
+          "title": "test",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Register test_01",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
                 {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8872,
+                  "errors": [],
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 7774,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Register-test-01-chrome\\test-finished-1.png"
-                        }
-                      ]
+                      "text": "==================================================\n"
+                    },
+                    {
+                      "text": "myArray =>  [\n  \u001b[32m'Our Services\\n'\u001b[39m +\n    \u001b[32m'Industries\\n'\u001b[39m +\n    \u001b[32m'Industries\\n'\u001b[39m +\n    \u001b[32m'\\n'\u001b[39m +\n    \u001b[32m'Learn how we draw on industry expertise to make companies more competitive.\\n'\u001b[39m +\n    \u001b[32m'\\n'\u001b[39m +\n    \u001b[32m'Aerospace and Defense\\n'\u001b[39m +\n    \u001b[32m'Automotive Industry\\n'\u001b[39m +\n    \u001b[32m'Consumer Products Industry\\n'\u001b[39m +\n    \u001b[32m'Education\\n'\u001b[39m +\n    \u001b[32m'Energy\\n'\u001b[39m +\n    \u001b[32m'Financial Institutions\\n'\u001b[39m +\n    \u001b[32m'Health Care Industry\\n'\u001b[39m +\n    \u001b[32m'Industrial Goods\\n'\u001b[39m +\n    \u001b[32m'Insurance Industry\\n'\u001b[39m +\n    \u001b[32m'Principal Investors and Private Equity\\n'\u001b[39m +\n    \u001b[32m'Public Sector\\n'\u001b[39m +\n    \u001b[32m'Retail Industry\\n'\u001b[39m +\n    \u001b[32m'Technology, Media, and Telecommunications\\n'\u001b[39m +\n    \u001b[32m'Transportation and Logistics\\n'\u001b[39m +\n    \u001b[32m'Travel and Tourism\\n'\u001b[39m +\n    \u001b[32m'Urban Planning\\n'\u001b[39m +\n    \u001b[32m'Capabilities\\n'\u001b[39m +\n    \u001b[32m'BCG X'\u001b[39m,\n  \u001b[32m'Industries\\n'\u001b[39m +\n    \u001b[32m'Industries\\n'\u001b[39m +\n    \u001b[32m'\\n'\u001b[39m +\n    \u001b[32m'Learn how we draw on industry expertise to make companies more competitive.\\n'\u001b[39m +\n    \u001b[32m'\\n'\u001b[39m +\n    \u001b[32m'Aerospace and Defense\\n'\u001b[39m +\n    \u001b[32m'Automotive Industry\\n'\u001b[39m +\n    \u001b[32m'Consumer Products Industry\\n'\u001b[39m +\n    \u001b[32m'Education\\n'\u001b[39m +\n    \u001b[32m'Energy\\n'\u001b[39m +\n    \u001b[32m'Financial Institutions\\n'\u001b[39m +\n    \u001b[32m'Health Care Industry\\n'\u001b[39m +\n    \u001b[32m'Industrial Goods\\n'\u001b[39m +\n    \u001b[32m'Insurance Industry\\n'\u001b[39m +\n    \u001b[32m'Principal Investors and Private Equity\\n'\u001b[39m +\n    \u001b[32m'Public Sector\\n'\u001b[39m +\n    \u001b[32m'Retail Industry\\n'\u001b[39m +\n    \u001b[32m'Technology, Media, and Telecommunications\\n'\u001b[39m +\n    \u001b[32m'Transportation and Logistics\\n'\u001b[39m +\n    \u001b[32m'Travel and Tourism\\n'\u001b[39m +\n    \u001b[32m'Urban Planning'\u001b[39m,\n  \u001b[32m'Capabilities'\u001b[39m,\n  \u001b[32m'BCG X'\u001b[39m,\n  \u001b[32m'Our Insights'\u001b[39m,\n  \u001b[32m'BCG Alumni'\u001b[39m,\n  \u001b[32m'Our Company\\nAbout BCG\\nPeople\\nOffices\\nCorporate Newsroom'\u001b[39m,\n  \u001b[32m'About BCG'\u001b[39m,\n  \u001b[32m'People'\u001b[39m,\n  \u001b[32m'Offices'\u001b[39m,\n  \u001b[32m'Corporate Newsroom'\u001b[39m,\n  \u001b[32m'Join Us'\u001b[39m\n]\n"
+                    },
+                    {
+                      "text": "==================================================\n"
                     }
                   ],
-                  "status": "expected"
-                }
-              ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 10,
-              "column": 5
-            },
-            {
-              "title": "Login test_02",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 300000,
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-18T17:43:58.040Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 9160,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Login-test-02-chrome\\test-finished-2.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Playwright\\playwright-ts-lambdatest\\test-results\\BCG2-test-chrome\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Playwright\\playwright-ts-lambdatest\\test-results\\BCG2-test-chrome\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Playwright\\playwright-ts-lambdatest\\test-results\\BCG2-test-chrome\\trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 23,
-              "column": 5
-            },
-            {
-              "title": "Add to cart test_03",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 300000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 13035,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-2.png"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\kouss\\OneDrive\\Desktop\\learn-playwright\\test-results\\pomtest-addToCartUsingFixture-Page-object-test-demo-Add-to-cart-test-03-chrome\\test-finished-3.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "pomtest/addToCartUsingFixture.test.ts",
-              "line": 31,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "7315c3cb29a025e10a0e-3eae8ffd6a8a67f64c55",
+          "file": "BCG2.test.ts",
+          "line": 17,
+          "column": 5
         }
       ]
     }
   ],
-  "errors": []
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-18T17:43:55.501Z",
+    "duration": 13020.68,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
 }
